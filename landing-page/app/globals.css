@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0a0b12;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url(/bg.webp);
+  background-position: center;
+  color: white;
+  font-family: "Montserrat";
+  max-width: 1200;
+  margin: 0 auto;
+  position: relative;
+}
+
+.upper-group-wrapper {
+  width: 100%
+}
+
+.header-castmate-beta {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 1.5%;
+  margin-top: 1.5%
+}
+
+.header-castmate {
+  padding-left: 10vw;
+  width: 100%;
+  font-size: 1.5vw;
+  text-align: start;
+}
+
+.header-earlyaccess {
+  padding-right: 10vw;
+  font-size: 1.5vw;
+  width: 100%;
+  color: #ccc;
+  text-align: end;
+  background-color: transparent;
+  border-color: transparent;
+  
+}
+
+.header-earlyaccess:focus {
+  color: #ff006e;
+  outline: none;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.glass-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 2vw;
+}
+
+.castmate {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.bring {
+  color: #ccc;
+  font-size: 1.6vw;
+  text-align: center;
+}
+
+.input-submit-wrapper {
+  display: flex;
+  align-items: center;
+  height: 3vw;
+  margin-top: 1vw;
+}
+
+.input {
+  background-color: white;
+  border: none;
+  outline: none;
+  height: 4vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 2vw;
+  border-top-left-radius: 0.5vw;
+  border-bottom-left-radius: 0.5vw;
+}
+
+.submit-button {
+  height: 4vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: #75197d;
+  color: white;
+  border: none;
+  font-size: 2vw;
+  border-top-right-radius: 0.5vw;
+  border-bottom-right-radius: 0.5vw;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  gap: 10px;
+}
+
+.app-store-button {
+  background-image: url(/app-store.svg);
+  background-size: cover;
+  width: 17.3vw;
+  height: 5.1vw;
+  border: none;
+  background-color: transparent;
+}
+
+.google-play-button {
+  background-image: url(/google-play.png);
+  background-size: cover;
+  background-position: center;
+  width: 19.5vw;
+  height: 5.1vw;
+  border: none;
+  background-color: transparent;
+}
+
+.videos-container {
+  margin-top: 20vw;
+  margin-bottom: 10vw;
+}
+
+.video-wrapper {
+  position: relative;
+}
+
+.video-wrapper iframe {
+  display: flex;
+  width: 40%;
+  height: 400px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-wrapper {
+  width: 100%;
+  padding: 10%;
+  color: #ccc;
+  margin-top: 20px;
+
+}
+
+.bottomList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 30;
+}
+
+.bottom-item-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  margin: 0.5vw;
+}
+
+.bottom-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bottom-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  width: 100%;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  text-align: center;
+}
+
+.footer-button-group {
+  display: flex;
+  gap: 1vw;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-x-button {
+  width: 5vw;
+  height: 5vw;
+  fill: transparent;
+  stroke: #75197d;
+  stroke-width: 3px;
+  border: 0.1vw solid #75197d;
+  border-radius: 0.4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.footer-tiktok-button {
+  width: 5vw;
+  height: 5vw;
+  fill: transparent;
+  stroke: #75197d;
+  stroke-width: 25px;
+  border: 0.1vw solid #75197d;
+  border-radius: 0.4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.footer-company {
+  width: 100%;
+  text-align: center;
+  padding: 1vw;
+  font-size: 1.8vw;
+}
+
+@media screen and (max-width: 600px) {
+  .glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  .video-wrapper iframe {
+    width: 60%;
+    height: 300px;
+  }
+
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottomList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-x-button {
+    stroke-width: 6px;
+  }
+
+  .footer-tiktok-button {
+    stroke-width: 40px;
+  }
+}
